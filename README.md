@@ -18,7 +18,7 @@ Finally, this project implements and **verifies** a geometric debiasing techniqu
 ### 1. Defining the Gender Subspace
 The gender direction $v_{gender}$ is computed using PCA on the difference vectors for 10 definitional pairs (e.g., $v_{he} - v_{she}$). This creates a robust, stable vector representing the "gender axis" in the embedding space.
 
-* * **Math:** $v_{gender} = \text{PCA}_{1}(v_{male} - v_{female})$
+* **Math:** $v_{gender} = \text{PCA}_{1}(v_{male} - v_{female})$
 
 ### 2. Quantifying Bias
 -   **Direct Bias:** $Bias(w) = v_w \cdot v_{gender}$
